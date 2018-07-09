@@ -3,4 +3,5 @@
 .ipython/
 .cache/
 .local/
+nltk_data/
 exercise/__pycache__/
