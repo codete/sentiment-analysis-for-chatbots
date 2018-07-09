@@ -1,3 +1,6 @@
 .idea/
 .ipynb_checkpoints/
-
+.ipython/
+.cache/
+.local/
+exercise/__pycache__/
