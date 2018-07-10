@@ -17,10 +17,10 @@ def preprocess_text(raw_text):
     # Remove quotation marks
     text = text.replace("\"", "")
     text = text.replace("'", "")
+    # Get rid of the misused spaces by
+    text = PUNCTUATION_MARKS_REGEX.sub(" \\1 ", text)
     # Divide duplicated characters, so after text split they'll be treated
     # as if they were a single character used a couple of times
     text = DUPLICATED_LETTER_REGEX.sub("\\1", text)
-    # Get rid of the misused spaces by
-    text = PUNCTUATION_MARKS_REGEX.sub(" \\1 ", text)
     # Return preprocessed value
     return text

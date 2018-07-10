@@ -5,3 +5,4 @@
 .local/
 nltk_data/
 exercise/__pycache__/
+solution/__pycache__/

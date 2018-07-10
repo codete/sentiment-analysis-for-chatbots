@@ -4,7 +4,9 @@ This repository contains all the materials for "Sentiment analysis for chatbots"
 
 ## Prerequisites
 
-In order to run the project, you have to install Docker and Docker Compose. Depending on the platrform you use, the installation process may vary. Please have a look at the official documentation of Docker Compose: https://docs.docker.com/compose/install/ to do it properly.
+In order to run the project, you have to install Docker and Docker Compose. Depending on the platform you use, 
+the installation process may vary. Please have a look at the official documentation of Docker Compose: 
+https://docs.docker.com/compose/install/ to do it properly.
 
 ## Running the notebooks
 
