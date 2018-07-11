@@ -29,7 +29,7 @@ features = vectorizer.fit_transform(tweets["text"])
 
 # Create the model an train it
 model = RandomForestClassifier(n_estimators=100, criterion="gini", max_features="auto", random_state=2018)
-fit_model = model.fit(features, tweets["sentiment"])
+model.fit(features, tweets["sentiment"])
 
 # Continuously read the sentences from the standard input
 # and classify them with the created model
@@ -39,6 +39,6 @@ while True:
         break
     # Classify the message and display the probabilities
     sentence_features = vectorizer.transform((sentence, ))
-    probabilities = fit_model.predict_proba(sentence_features)
+    probabilities = model.predict_proba(sentence_features)
     print("Sentence: {}\nProbabilities: {}".format(sentence,
-                                                   dict(zip(fit_model.classes_, probabilities[0]))))
+                                                   dict(zip(model.classes_, probabilities[0]))))
