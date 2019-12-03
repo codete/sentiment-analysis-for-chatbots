@@ -6,3 +6,5 @@
 nltk_data/
 exercise/__pycache__/
 solution/__pycache__/
+Pipfile
+Pipfile.lock
